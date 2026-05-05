@@ -13,4 +13,4 @@ while flag == True :
     elif guess < answer:
         print('Too low')
     else:
-        print('Bad guess')
+        print('Too high')
