@@ -1,11 +1,16 @@
 import random
 
-guess = int(input('guess='))
-print('Your guess is', guess)
+
 answer = random.randint(1, 100)
-if guess == answer :
-    print('Good guess')
-elif guess < answer:
-    print('Too low')
-else:
-    print('Bad guess')
+flag = True
+while flag == True :
+    guess = int(input('guess='))
+    print('Your guess is', guess)
+    
+    if guess == answer :
+        print('Good guess')
+        flag=False
+    elif guess < answer:
+        print('Too low')
+    else:
+        print('Bad guess')
